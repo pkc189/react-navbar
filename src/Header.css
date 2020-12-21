@@ -1,0 +1,33 @@
+.Header{
+  display:grid;
+  grid-template-areas: logo nav;
+}
+
+.Nav{
+  grid-area:nav;
+  display: grid;
+  grid-template-rows: repeat(4,auto);
+  align-items: center;justify-items: center;position: absolute;top: 10%;left: 50%;transform:translate(-50%,-0%);
+}
+
+.Nav a,button{
+  margin-top: 15px;text-decoration: none;
+}
+
+
+@media only screen and (min-width:400px){
+
+
+.Nav{
+  grid-area:nav;
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  align-items: center;justify-items: center;position: relative;margin-top: 0;
+}
+
+
+.Nav a,button{
+  margin-top: 15px;text-decoration: none;
+}
+
+}
